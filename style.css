@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;   
+}
+
+body {
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    margin: 50px auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.container .top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+    padding-bottom: 0;
+    gap: 24px;
+}
+
+.container .top .imgBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .top .imgBox .box {
+    width: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+    aspect-ratio: 1 / 2;
+    position: relative;
+}
+
+.container .top .imgBox .box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .top .profileText {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+}
+
+.container .top .profileText h3 {
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.container .top .profileText h3 span {
+    display: block;
+    font-size: 0.5em;
+    font-weight: 300;
+    margin-top: -10px;
+    color: #666;
+}
+
+.container .contentBox {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 40px 40px;
+    gap: 48px;
+}
+
+.container .contentBox h3 {
+    border-left: 4px solid #ff8bbf;
+    padding-left: 10px;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin: 50px 0 20px;
+}
+
+.container .contentBox ul {
+    margin: 10px 0;
+    padding-left: 0;
+}
+
+.container .contentBox ul li {
+    list-style: none;
+    margin: 20px 0;
+    line-height: 1.4;
+    color: #333;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.container .contentBox ul li ion-icon {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #3590d2;
+    flex-shrink: 0;
+}
+
+.container .contentBox ul.education li {
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+h5 {
+    color: #3590d2;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+h4 {
+    color: #333;
+    font-weight: 500;
+    margin: 5px 0;
+    font-size: 1.125rem;
+}
+
+h6 {
+    color: #666;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.language li {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.language li span {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.language .percent {
+    width: 100%;
+    background: #e3e3e3;
+    height: 6px;
+    margin: 15px 0 10px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.language .percent div {
+    height: 100%;
+    background: #3590d2;
+    border-radius: 3px 0 0 3px;
+    transition: width 0.6s ease;
+}
+
+.container .contentBox ul.interest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.container .contentBox ul.interest li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.container .contentBox ul.interest li .icon {
+    width: 40px;
+    height: 40px;
+    background: #3590d2;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.container .contentBox ul.interest li .icon ion-icon {
+    color: #fff;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.rightSide {
+    padding-left: 40px;
+}
+
+.aboutMe {
+    margin-bottom: 40px;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company {
+    min-width: 150px;
+    margin-bottom: 10px;
+}
+
+.about .box .year_company h5 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.about .box .year_company h5:first-child {
+    color: #3590d2;
+}
+
+.about .box .text h4 {
+    color: #3590d2;
+    font-size: 16px;
+    margin: 0;
+}
+
+.about.skills .box {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.about.skills .box .percent {
+    width: 100%;
+    height: 10px;
+    background: #e3e3e3;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.about.skills .box .percent div {
+    height: 100%;
+    background: #3590d2;
+    border-radius: 5px 0 0 5px;
+    transition: width 0.6s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+    }
+
+    .container .top {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .container .contentBox {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .rightSide {
+        padding-left: 0;
+    }
+
+    .container .contentBox ul.interest {
+        grid-template-columns: 1fr;
+    }
+
+    .container .top .profileText h3 {
+        font-size: 2rem;
+    }
+}
